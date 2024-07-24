@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess The Number Game</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div id="game">
+            <h3>
+                I am thinking of a number between 1-100.<br />
+                Can you guess it?
+            </h3>
+            <div class="input-wrapper">
+                <input type="number" placeholder="00" id="guess" />
+                <button id="check-btn">Guess</button>
+            </div>
+            <p id="answer-status"></p>
+            <p id="no-of-guesses">No. Of Guesses: 0</p>
+            <p id="guessed-nums">Guessed Numbers are: None</p>
+            <p id="exp"></p>
+        </div>
+        <div class="result">
+            <div id="hint">
+            </div>
+            <button id="restart">Restart</button>
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="app/app.js"></script>
+    <script src="app/confetti.js"></script>
+</body>
+
+</html>
